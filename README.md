@@ -93,11 +93,3 @@ This project is released for educational and research purposes.
 
 ---
 
-## Why THIS is the right README ✅
-
-- Clean
-- Standard
-- Familiar to everyone
-- No over-explaining
-- Looks **professional**, not noisy
-- Same structure as popular Python repos
