@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Hugging Face / Torch cache
+.cache/
+*.pt
+*.bin
+
+# Checkpoints (optional – comment out if you want them)
+checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

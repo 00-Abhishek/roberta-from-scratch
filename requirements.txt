@@ -1,0 +1,55 @@
+
+torch
+transformers
+tokenizers
+datasets
+accelerate
+pip install --upgrade pip
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+pip install transformers datasets tokenizers accelerate sentencepiece
+pip install numpy tqdm
+
+Phase 2: Define What We Are Building (Step 2)
+| Component           | Value                                 |
+| ------------------- | ------------------------------------- |
+| Model type          | RoBERTa-style encoder                 |
+| Layers              | 6                                     |
+| Heads               | 8                                     |
+| Hidden size         | 512                                   |
+| Max sequence length | 128                                   |
+| Tokenizer           | Byte-level BPE (trained from scratch) |
+| Objective           | Masked Language Modeling (MLM)        |
+
+Step 3: Dataset Selection (Public, Proven, Practical)
+Chosen dataset: WikiText-2 (raw)
+
+Why this dataset (verified facts):
+
+Curated and widely used in language-model research
+
+Clean English text (already sentence-like)
+
+Small enough to train on a single GPU
+
+Used in many baseline LM papers and tutorials
+
+Available directly via Hugging Face datasets
+
+This avoids:
+
+Noisy web text
+
+Legal ambiguity
+
+Hidden preprocessing assumptions
+
+
+Dataset Details (Facts)
+| Property    | Value                          |
+| ----------- | ------------------------------ |
+| Name        | `wikitext`                     |
+| Subset      | `wikitext-2-raw-v1`            |
+| Size        | ~2 million tokens              |
+| Language    | English                        |
+| License     | Permissive (Wikipedia content) |
+| Typical use | LM and MLM benchmarking        |
