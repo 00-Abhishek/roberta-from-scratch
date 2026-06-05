@@ -242,7 +242,6 @@ pip install -r requirements.txt
 
 ## 🙏 Acknowledgements
 
-- **Dr. Shikha Singh** — guidance and supervision, LLM course (AIML403)
 - **Liu et al. (2019)** — [*RoBERTa: A Robustly Optimized BERT Pretraining Approach*](https://arxiv.org/abs/1907.11692)
 - **Devlin et al. (2018)** — original BERT paper that RoBERTa improves upon
 - Open-source community — PyTorch, Hugging Face Transformers & Tokenizers
